@@ -19,12 +19,12 @@ body{
 
 .conteiner-header
 .nav-bar{
-  background-color: aliceblue;  
   display: flex;
   justify-content: space-between;
   width: 90%;
   min-height: 10vh;
   margin: 0 auto;
+  color: white;
 }
 .conteiner-header
 .nav-bar span{
@@ -48,21 +48,45 @@ body{
 .conteiner-abaixo-menu{
     width: 100%;
     height: 90vh;
-    background-color: firebrick;
     display: flex;
     justify-content: center;
 }
 
 .conteiner-abaixo-menu
 .aside-redes-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7%;
     height: 85vh;
     width: 6%;
-    background-color: rgb(96, 176, 247);
+}
+.conteiner-abaixo-menu
+.aside-redes-header .logo-insta{
+    width: 55px;
+    height: 35px;
+    background-image: linear-gradient(90deg,  #515BD4, #DD2A7B, #F58529);
+    display: flex;
+    align-items: center;
+    justify-content:right;
+}
+.conteiner-abaixo-menu
+.aside-redes-header .logo-whats{
+    width: 55px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+    background-color: #25D366;
+}
+.conteiner-abaixo-menu
+.aside-redes-header a i{
+    font-size: 1.6rem;
+    color: #f8f8f8ee;
 }
 
 .conteiner-abaixo-menu
 .conteudo-header{
     height: 85vh;
     width: 94%;
-    background-color: rgb(58, 159, 247);
 }
