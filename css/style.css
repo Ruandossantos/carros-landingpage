@@ -4,19 +4,25 @@
     box-sizing: border-box;
 }
 :root{
-    --colo-backgraund: #2E2E2E;
-
+    --colo-backgraund: #c2c2c2;
+    --color-secundaria: #202022;
+    --color-terciara: #00747C;
+    --font-roboto :"Roboto", sans-serif;
+    --font-work-sans: "Work Sans", sans-serif;
 }
 
 body{
     background-color: var(--colo-backgraund);
 }
 
+/*Estilização do meu conteiner Header -------------------------------------------------------*/
 .conteiner-header{
     min-height: 100vh;
     width: 100%;
 }
 
+
+/*Estilizaçã do menu de navegação --------------------------------------------------------*/
 .conteiner-header
 .nav-bar{
   display: flex;
@@ -24,7 +30,11 @@ body{
   width: 90%;
   min-height: 10vh;
   margin: 0 auto;
-  color: white;
+  color: var(--color-secundaria);
+  font-family:  var(--font-roboto);
+  background-color: var(--color-terciara);
+  padding: 0px 20px;
+  box-shadow: 0px 0px 30px rgba(128, 128, 128, 0.658);
 }
 .conteiner-header
 .nav-bar span{
@@ -39,10 +49,53 @@ body{
     gap: 20%;
     list-style: none;
 }
+.conteiner-header
+.nav-bar ul li{
+    position: relative;
+    transition: 0.2;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--color-secundaria);
+    transition: 0.4s;
+}
+.conteiner-header
+.nav-bar ul li:hover{
+    color: var(--colo-backgraund);
+    scale: 0.9;
+}
+
+.conteiner-header
+.nav-bar ul li:hover::before{
+    top: 100%;
+    position: absolute;
+    content: "";
+    width: 120%;
+    height: 2px;
+    background-color: var(--colo-backgraund);
+    opacity: .9;
+    cursor: pointer;
+    animation: barrali 1s 1 ease-in-out;
+}
+@keyframes barrali {
+    0%{
+        width: 0%;
+    }
+}
+
 
 .conteiner-header
 .nav-bar address{
     padding-top: 20px;
+    text-decoration: none;
+    font-family: var(--font-work-sans);
+}
+
+.conteiner-header
+.nav-bar address i{
+   font-size: 1.3rem;
+   color: rgb(201, 45, 45);
+   padding-right: 5px;
 }
 
 .conteiner-abaixo-menu{
@@ -51,6 +104,9 @@ body{
     display: flex;
     justify-content: center;
 }
+
+/*Fim do menu de navegação -------------------------------------------------------*/
+
 
 .conteiner-abaixo-menu
 .aside-redes-header{
@@ -68,7 +124,7 @@ body{
     background-image: linear-gradient(90deg,  #515BD4, #DD2A7B, #F58529);
     display: flex;
     align-items: center;
-    justify-content:right;
+    padding-left: 20px;
 }
 .conteiner-abaixo-menu
 .aside-redes-header .logo-whats{
@@ -76,7 +132,7 @@ body{
     height: 35px;
     display: flex;
     align-items: center;
-    justify-content:right;
+    padding-left: 20px;
     background-color: #25D366;
 }
 .conteiner-abaixo-menu
@@ -89,4 +145,139 @@ body{
 .conteudo-header{
     height: 85vh;
     width: 94%;
+    display: flex;
+    padding: 20px;
+}
+
+.conteiner-abaixo-menu
+.conteudo-header
+.esquero-conteudo{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteiner-abaixo-menu
+.conteudo-header
+.esquero-conteudo h1{
+    font-size: 4rem;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 900;
+    text-indent: 20px;
+    padding-top: 40px;
+    color: var(--color-terciara);
+}
+
+.conteiner-abaixo-menu
+.conteudo-header
+.esquero-conteudo h1 span{
+   color: var(--color-secundaria);
+}
+
+.conteiner-abaixo-menu
+.conteudo-header
+.esquero-conteudo p{
+   text-align: center;
+   font-family: var(--font-roboto);
+   font-size: 2rem;
+   padding-top: 40px;
+   font-weight: 600;
+   color: var(--color-terciara);
+}
+
+
+.conteiner-abaixo-menu
+.conteudo-header
+.esquero-conteudo button{
+   width: 220px;
+   height: 60px;
+   margin-top: 70px;
+    background-color: var(--color-secundaria);
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--colo-backgraund);
+    transition: 0.5s;
+}
+
+.conteiner-abaixo-menu
+.conteudo-header
+.esquero-conteudo button:hover{
+    background-color:var(--color-terciara);
+    color: var(--colo-backgraund);
+    scale: 1.1;
+}
+
+
+/*Destaques da loja*/
+
+.destaques{
+    width: 64%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.destaques .imgs{  
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.destaques .imgs button {
+    background-color: transparent;
+    box-shadow: 0px 0px 11px rgba(150, 148, 148, 0.377) ;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    width: 50px;
+    height: 40px;
+}
+
+.destaques .imgs button i{
+    font-size: 1.4rem;
+    font-weight:bolder;
+}
+
+.destaques .imgs .carrosdestaque{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.destaques .imgs .carrosdestaque img{
+    width: 100%;
+    overflow: hidden;
+}
+
+#jeep{
+    display: none;
+}
+
+
+.destaques .destaquesbtn{
+    width: 220px;
+   height: 60px;
+   margin-top: 70px;
+    background-color: var(--color-secundaria);
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--colo-backgraund);
+    transition: 0.5s;
+}
+
+.destaques .destaquesbtn:hover{
+    background-color:var(--color-terciara);
+    color: var(--colo-backgraund);
+    scale: 1.1;
 }
