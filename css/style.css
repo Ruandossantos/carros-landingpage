@@ -5,9 +5,9 @@
 }
 
 :root {
-    --colo-backgraund: #c2c2c2;
-    --color-secundaria: #202022;
-    --color-terciara: #8C030E;
+    --colo-backgraund: #28303F;
+    --color-secundaria: #A58D70;
+    --color-terciara: #ECEEF1;
     --font-roboto: "Roboto", sans-serif;
     --font-work-sans: "Work Sans", sans-serif;
 }
@@ -35,6 +35,8 @@ body {
     font-family: var(--font-roboto);
     padding: 0px 20px;
     background-color: var(--color-terciara);
+    position: fixed;
+    z-index: 99999999;
 }
 
 .conteiner-header .nav-bar span {
@@ -60,7 +62,7 @@ body {
 }
 
 .conteiner-header .nav-bar ul li:hover {
-    color: var(--colo-backgraund);
+    color: var(--color-secundaria);
     scale: 0.9;
 }
 
@@ -70,7 +72,7 @@ body {
     content: "";
     width: 120%;
     height: 2px;
-    background-color: var(--colo-backgraund);
+    background-color: var(--color-secundaria);
     opacity: .9;
     cursor: pointer;
     animation: barrali 1s 1 ease-in-out;
@@ -94,20 +96,21 @@ body {
     padding-right: 5px;
 }
 
+/*Fim do menu de navegação -------------------------------------------------------*/
+
 .conteiner-abaixo-menu {
     width: 100%;
     height: 90vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-
-/*Fim do menu de navegação -------------------------------------------------------*/
-
 
 .conteiner-abaixo-menu .aside-redes-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    float: left;
     gap: 7%;
     height: 85vh;
     width: 6%;
@@ -132,7 +135,7 @@ body {
 }
 
 .conteiner-abaixo-menu .aside-redes-header a i {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     color: #f8f8f8ee;
 }
 
@@ -149,6 +152,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .conteiner-abaixo-menu .conteudo-header .esquero-conteudo h1 {
@@ -183,8 +187,8 @@ body {
     border: none;
     border-radius: 20px;
     font-size: 1rem;
-    font-weight: 500;
-    color: var(--colo-backgraund);
+    font-weight: 600;
+    color: var(--color-terciara);
     transition: 0.5s;
     cursor: pointer;
 }
@@ -229,6 +233,7 @@ body {
 .destaques .imgs button i {
     font-size: 1.4rem;
     font-weight: bolder;
+    color: var(--color-terciara);
 }
 
 .destaques .imgs .carrosdestaque {
@@ -239,8 +244,9 @@ body {
 }
 
 .destaques .imgs .carrosdestaque img {
-    width: 90%;
+    width: 100%;
     overflow: hidden;
+    rotate: -10deg;
 }
 
 #jeep {
@@ -265,4 +271,11 @@ body {
     color: var(--colo-backgraund);
     scale: 1.1;
     cursor: pointer;
+}
+
+main{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #8C030E;
+    display: none;
 }
