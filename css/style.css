@@ -287,7 +287,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--colo-backgraund);
+    background-color: #28303f70;
 }
 
 main .title-estoque {
@@ -340,8 +340,8 @@ main .title-estoque i {
             padding: 5px;
             display: grid;
             justify-content: space-between;
-            grid-template-columns: 350px 350px 350px;
-            grid-template-rows: 430px;
+            grid-template-columns: 320px 320px 320px;
+            grid-template-rows: 400px;
             gap: 10px;
         }
 
@@ -354,7 +354,7 @@ main .title-estoque i {
 
 /*Estulização car 1 - CRETA*/
         main .container-carros .estoque-linha1 .item1 {
-            background-color: var(--color-terciara);
+            background-color: var(--color-secundaria);
             display: flex;
             justify-content: center;
             justify-content: space-between;
@@ -407,37 +407,60 @@ main .title-estoque i {
         display: none;
         }
 
-        main .container-carros .estoque-linha1 .item1 .creta .img-carro img {
+        main .container-carros 
+        .estoque-linha1 .item1 
+        .creta .img-carro img {
         width: 380px;
         height: 280px;
         }
 
-        main .container-carros .estoque-linha1 .item1 .creta .caracteristicas-creta{
-            width: 380px;
-            height: 80px;
+        main .container-carros 
+        .estoque-linha1 .item1 
+        .creta .caracteristicas-creta{
+            width: 100%;
+            height: 110px;
             display: flex;
             margin: 0 auto;
         }
 
 
-        main .container-carros .estoque-linha1 .item1 .creta .caracteristicas-creta .left{
-            width: 60%;
-            height: 80px;
-            padding-top: 10px;
+        main .container-carros 
+        .estoque-linha1 .item1 
+        .creta .caracteristicas-creta .left{
+            width: 70%;
+            height: 110px;
+            padding: 10px;
         }
 
-        main .container-carros .estoque-linha1 .item1 .creta .caracteristicas-creta .left h1, h2,h3,h4{
-            font-size: .9rem;
-            font-family: var(--font-work-sans);
+        main .container-carros ,
+        .estoque-linha1, .item1 ,
+        .creta, .caracteristicas-creta ,
+        .left, p{
+            font-size: 1rem;
+            font-family: var(--font-roboto);
             padding-bottom: 5px;
+            font-weight: 500;
+        }
+        main .container-carros ,
+        .estoque-linha1, .item1 ,
+        .creta, .caracteristicas-creta ,
+        .left, p .des{
+            font-size: .9rem;
+            font-weight: 300;
         }
 
-        main .container-carros .estoque-linha1 .item1 .creta .caracteristicas-creta .rigth{
-            width: 40%;
+        main .container-carros 
+        .estoque-linha1 .item1 
+        .creta .caracteristicas-creta 
+        .rigth{
+            width: 30%;
             height: 50px;
         }
-        main .container-carros .estoque-linha1 .item1 .creta .caracteristicas-creta .rigth button{
-           width: 70%;
+        main .container-carros 
+        .estoque-linha1 .item1 
+        .creta .caracteristicas-creta 
+        .rigth button{
+           width: 100%;
            height: 60%;
            border: none;
            background-color: var(--colo-backgraund);
@@ -449,7 +472,7 @@ main .title-estoque i {
          text-decoration: none;
          text-transform: uppercase;
          font-family: var(--font-work-sans);
-         font-weight: 600;
+         font-weight: 400;
         }
  
 
@@ -458,7 +481,7 @@ main .title-estoque i {
 
 /*Estilização car 2 - HB20 SENSE*/
         main .container-carros .estoque-linha1 .item2 {
-            background-color: var(--color-terciara);
+            background-color: var(--color-secundaria);
             display: flex;
             justify-content: center;
             padding: 5px;
@@ -500,52 +523,64 @@ main .title-estoque i {
             height: 280px;
         }
 
-        main .container-carros .estoque-linha1 .item2 .hb20-sense .img-carro {
+        main .container-carros .estoque-linha1 .item2 .hb20-sense .img-hb20-sense {
             display: flex;
-            align-items: center;
-            justify-content: center;
             overflow: hidden;
         }
-
-        #hb20-sense-fundo-lateral,
-        #hb20-sense-fundo,
-        #hb20-sense-interna{
-        display: none;
+        main .container-carros .estoque-linha1 .item2 .hb20-sense .img-hb20-sense,
+        .hb20-sense-frente-lateral,
+        .hb20-sense-fundo-lateral,
+        .hb20-sense-fundo,
+        .hb20-sense-interna{
+     
         }
-
-        main .container-carros .estoque-linha1 .item2 .hb20-sense .img-carro img {
+        .on{
+         
+        }
+        main .container-carros .estoque-linha1 .item2 .hb20-sense .img-hb20-sense img {
         width: 380px;
         height: 280px;
         }
-        main .container-carros .estoque-linha1 .item2 .hb20-sense  .caracteristicas-hb20-sense{
-            width: 380px;
-            height: 80px;
+        main .container-carros
+         .estoque-linha1 .item2
+          .hb20-sense
+            .caracteristicas-hb20-sense{
+            width: 100%;
+            height:110px;
             display: flex;
             margin: 0 auto;
         }
 
-        main .container-carros .estoque-linha1 .item2 .hb20-sense  .caracteristicas-hb20-sense .left{
-            width: 60%;
-            height: 80px;
+        main .container-carros 
+        .estoque-linha1 .item2 
+        .hb20-sense  
+        .caracteristicas-hb20-sense 
+        .left{
+            width: 70%;
+            height: 110px;
             padding-top: 10px;
+            padding: 10px;
         }
 
-        main .container-carros .estoque-linha1 .item2 .hb20-sense  .caracteristicas-hb20-sense .left h1, h2,h3,h4{
-            font-size: 1rem;
-            font-family: var(--font-work-sans);
-            padding-bottom: 5px;
-        }
-
-        main .container-carros .estoque-linha1 .item2 .hb20-sense  .caracteristicas-hb20-sense .rigth{
-            width: 40%;
+        
+        main .container-carros 
+        .estoque-linha1 
+        .item2 .hb20-sense
+        .caracteristicas-hb20-sense 
+        .rigth{
+            width: 30%;
             height: 50px;
         }
-        main .container-carros .estoque-linha1 .item2  .caracteristicas-hb20-sense .rigth button{
-           width: 100%;
-           height: 100%;
-           border: none;
-           background-color: var(--colo-backgraund);
-           color: var(--color-terciara);
+
+        main .container-carros 
+        .estoque-linha1 .item2  
+        .caracteristicas-hb20-sense 
+        .rigth button{
+            width: 100%;
+            height: 60%;
+            border: none;
+            background-color: var(--colo-backgraund);
+            color: var(--color-terciara);
         }
 
         main .container-carros .estoque-linha1 .item2  .caracteristicas-hb20-sense .rigth button a{          
@@ -553,7 +588,7 @@ main .title-estoque i {
          text-decoration: none;
          text-transform: uppercase;
          font-family: var(--font-work-sans);
-         font-weight: 600;
+         font-weight: 400;
         }
 
 /* FIM ----Estulização car 2 - HB20 SENSE*/
@@ -561,7 +596,7 @@ main .title-estoque i {
 
 /* Inicio Card Estilização car 3 - JEEP COMPASS*/
         main .container-carros .estoque-linha1 .item3 {
-            background-color: var(--color-terciara);
+            background-color: var(--color-secundaria);
             display: flex;
             justify-content: center;
             padding: 5px;
@@ -618,48 +653,63 @@ main .title-estoque i {
         display: none;
         }
 
-        main .container-carros .estoque-linha1 .item3 .jeep-compass .img-carro img {
+        main .container-carros
+         .estoque-linha1 .item3
+          .jeep-compass
+           .img-carro img {
         width: 380px;
         height: 280px;
         }
-        main .container-carros .estoque-linha1 .item3 .jeep-compass .caracteristicas-jeep-compass{
-            width: 380px;
-            height: 80px;
+
+        main .container-carros
+         .estoque-linha1 .item3
+          .jeep-compass .caracteristicas-jeep-compass{
+            width: 100%;
+            height: 110px;
             display: flex;
             margin: 0 auto;
         }
 
 
-        main .container-carros .estoque-linha1 .item3 .jeep-compass .caracteristicas-jeep-compass .left{
-            width: 60%;
-            height: 80px;
+        main .container-carros 
+        .estoque-linha1 .item3 
+        .jeep-compass .caracteristicas-jeep-compass 
+        .left{
+            width: 70%;
+            height: 110px;
             padding-top: 10px;
+            padding: 10px;
+            
         }
 
-        main .container-carros .estoque-linha1 .item3 .jeep-compass .caracteristicas-jeep-compass .left h1, h2,h3,h4{
-            font-size: 1rem;
-            font-family: var(--font-work-sans);
-            padding-bottom: 5px;
-        }
-
-        main .container-carros .estoque-linha1 .item3 .jeep-compass .caracteristicas-jeep-compass .rigth{
-            width: 40%;
+        main .container-carros 
+         .estoque-linha1 .item3 
+          .jeep-compass 
+           .caracteristicas-jeep-compass 
+            .rigth{
+            width: 30%;
             height: 50px;
         }
-        main .container-carros .estoque-linha1 .item3 .jeep-compass .caracteristicas-jeep-compass .rigth button{
-           width: 100%;
-           height: 100%;
-           border: none;
-           background-color: var(--colo-backgraund);
-           color: var(--color-terciara);
+        main .container-carros
+         .estoque-linha1 .item3
+          .jeep-compass .caracteristicas-jeep-compass
+           .rigth button{
+            width: 100%;
+            height: 60%;
+            border: none;
+            background-color: var(--colo-backgraund);
+            color: var(--color-terciara);
         }
 
-        main .container-carros .estoque-linha1 .item3 .jeep-compass .caracteristicas-jeep-compass .rigth button a{          
+        main .container-carros 
+        .estoque-linha1 .item3 
+        .jeep-compass .caracteristicas-jeep-compass
+         .rigth button a{          
          color: var(--color-terciara);
          text-decoration: none;
          text-transform: uppercase;
          font-family: var(--font-work-sans);
-         font-weight: 600;
+         font-weight: 400;
         }
  
 /* FIM ----Estulização car 3 - JEEP COMPASS*/
