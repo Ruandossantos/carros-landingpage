@@ -386,6 +386,7 @@ main .container-carros .estoque-linha1 .item1 i {
     background-color: var(--colo-backgraund);
     opacity: .4;
     transition: 1s;
+    z-index: 9999;
 }
 
 main .container-carros .estoque-linha1 .item1 i:hover {
@@ -398,6 +399,7 @@ main .container-carros .estoque-linha1 .item1 .bi-arrow-bar-left {
     top: 45%;
     padding: 5px;
 }
+
 
 main .container-carros .estoque-linha1 .item1 .bi-arrow-bar-right {
     right: 0;
@@ -413,28 +415,31 @@ main .container-carros .estoque-linha1 .item1 .creta {
 
 main .container-carros .estoque-linha1 .item1 .creta .img-carro {
     display: flex;
+    width: 100%;
+    height: 280px;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-}
-
-#creta-fundo,
-#creta-interna,
-#creta-lado {
-    display: none;
+    position: relative;
 }
 
 main .container-carros .estoque-linha1 .item1 .creta .img-carro img {
+    width: 90%;
     height: 280px;
-}
-
+    opacity: 0;
+    position: absolute;
+    transition: .8s;
+  }
+  
+  main .container-carros .estoque-linha1 .item1 .creta .img-carro img.on {
+    opacity: 1;
+  }
 main .container-carros .estoque-linha1 .item1 .creta .caracteristicas-creta {
     width: 96%;
     height: 110px;
     display: flex;
     margin: 0 auto;
+    position: absolute;
 }
-
 
 main .container-carros .estoque-linha1 .item1 .creta .caracteristicas-creta .left {
     width: 70%;
