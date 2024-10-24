@@ -206,7 +206,6 @@ body {
     scale: 1.1;
 }
 
-
 /*Destaques da loja*/
 
 .destaques {
@@ -259,7 +258,6 @@ body {
 #jeep {
     display: none;
 }
-
 
 .destaques .destaquesbtn {
     width: 190px;
@@ -356,15 +354,13 @@ main .container-carros .estoque-linha1 {
     display: grid;
     justify-content: space-between;
     grid-template-columns: 320px 320px 320px;
-    grid-template-rows: 400px;
+    grid-template-rows: 100px;
     gap: 10px;
 }
 
 main .container-carros .estoque-linha1 div {}
 
 /* FIM ----Estilização linha 1 contendo 3 cards  de carros*/
-
-
 
 
 /*Estulização car 1 - CRETA*/
@@ -428,11 +424,12 @@ main .container-carros .estoque-linha1 .item1 .creta .img-carro img {
     opacity: 0;
     position: absolute;
     transition: .8s;
-  }
-  
-  main .container-carros .estoque-linha1 .item1 .creta .img-carro img.on {
+}
+
+main .container-carros .estoque-linha1 .item1 .creta .img-carro img.on {
     opacity: 1;
-  }
+}
+
 main .container-carros .estoque-linha1 .item1 .creta .caracteristicas-creta {
     width: 96%;
     height: 110px;
@@ -714,7 +711,8 @@ footer {
     align-items: center;
     position: relative;
 }
-footer .criador-cont{
+
+footer .criador-cont {
     position: absolute;
     align-items: center;
     top: 100%;
@@ -736,7 +734,7 @@ footer .footer-titulo {
     align-items: center;
     text-align: center;
     background-color: var(--color-secundaria);
-    
+
     margin-bottom: 20px;
 }
 
@@ -762,14 +760,16 @@ footer .conteudo-footer {
     padding-left: 20px;
 }
 
-.conte-left p{
+.conte-left p {
     text-decoration: none;
     font-weight: 400;
     color: var(--colo-backgraund);
 }
-.conte-left i{
+
+.conte-left i {
     padding-right: 10px;
 }
+
 .conte-reigth {
     width: 50%;
     height: 100%;
@@ -779,36 +779,219 @@ footer .conteudo-footer {
 }
 
 .conte-reigth .endereco {
-   width: 50%;
-   height: 100%;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   padding: 20px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
 }
 
 
-.conte-reigth .endereco h1{
+.conte-reigth .endereco h1 {
     color: var(--colo-backgraund);
     font-size: .9rem;
     text-transform: uppercase;
     margin-bottom: 13px;
 }
 
-.conte-reigth .endereco p{
+.conte-reigth .endereco p {
     text-decoration: none;
     font-weight: 400;
     color: var(--colo-backgraund);
     font-size: .9rem;
 }
-.conte-reigth .localizacoa{
+
+.conte-reigth .localizacoa {
     width: 69%;
     height: 100%;
 }
 
-.conte-reigth .localizacoa iframe{
+.conte-reigth .localizacoa iframe {
     width: 100%;
     height: 100%;
 }
 
 /*Final Estilização do footer*/
+
+
+
+
+@media screen and (max-width:480px) {
+
+    .conteiner-header {
+        min-height: 95vh;
+        width: 100%;
+    }
+
+    .conteiner-header .nav-bar {
+        width: 100%;
+        min-height: 5vh;
+    }
+
+    .conteiner-header .nav-bar ul {
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        display: flex;
+        gap: 20%;
+    }
+
+    .conteiner-header .nav-bar span {
+        display: none;
+    }
+
+    .conteiner-header .nav-bar address {
+        display: none;
+    }
+
+    .logo-insta {
+        width: 40px;
+        height: 35px;
+        background-image: linear-gradient(90deg, #515BD4, #DD2A7B, #F58529);
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        position: fixed;
+        position: absolute;
+        top: 90%;
+        border-radius: 5px;
+        z-index: 999999;
+    }
+
+    .conteiner-abaixo-menu .aside-redes-header .logo-whats {
+        width: 40px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        background-color: #25D366;
+        position: absolute;
+        top: 90%;
+        border-radius: 5px;
+        z-index: 999999;
+    }
+
+    .conteiner-abaixo-menu .conteudo-header .esquero-conteudo {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .conteiner-abaixo-menu .conteudo-header .esquero-conteudo h1 {
+        font-size: 3.4rem;
+    }
+
+    .conteiner-abaixo-menu .conteudo-header .esquero-conteudo p {
+        font-size: 1.5rem;
+    }
+
+    .conteiner-abaixo-menu .conteudo-header .esquero-conteudo button {
+        width: 290px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+
+    .destaques {
+        width: 70%;
+        height: 100%;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+
+
+
+
+    main {
+        min-height: 150vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--color-terciara);
+    }
+
+    main .container-carros .estoque-linha1 {
+        width: 97%;
+        min-height: 150vh;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 450px 460px 460px;
+        gap: 40px;
+    }
+
+    main .container-carros .estoque-linha1 .item1 {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        position: relative;
+        border-radius: 5px;
+        box-shadow: 0px 0px 33px #a58d703b;
+    }
+
+    main .container-carros .estoque-linha1 .item1 .bi-arrow-bar-left {
+        left: 0;
+        top: 45%;
+        padding: 9px;
+    }
+
+
+    main .container-carros .estoque-linha1 .item1 .bi-arrow-bar-right {
+        right: 0;
+        top: 45%;
+        padding: 9px;
+    }
+
+    footer {
+        width: 100%;
+        min-height: 50vh;
+        background-color: var(--color-terciara);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    footer .conteudo-footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        background-color: firebrick;
+    }
+    .conte-left {
+        width: 100%;
+        height: 50%;
+        background-color: #25D366;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 20px;
+    }
+    .conte-left p {
+        font-size: 1.2rem;
+    }
+    
+    .conte-left i {
+        font-size: 1.3rem;
+    }
+    .conte-reigth {
+        width: 100%;
+        height: 100%;
+        background-color: #515BD4;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-around;
+    }
+    
+}
