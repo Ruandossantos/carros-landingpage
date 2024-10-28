@@ -38,3 +38,52 @@ function prev_btn_creta(){
 
 prev_creta.addEventListener("click", prev_btn_creta);
 next_creta.addEventListener("click", next_btn_creta);
+
+
+
+
+
+
+
+
+
+
+
+var prev_btn_destaque = document.getElementById("bar-left");
+var netx_btn_destaque = document.getElementById("bar-right");
+var slider_destaque = document.querySelectorAll(".carrosdestaque img");
+
+
+var valordestaque  = 0
+
+function removercldestaqueoff(){
+    slider_destaque.forEach(item=> item.classList.remove("destaqueon"))
+}
+
+function addcldestaqueon(){
+    slider_destaque[valordestaque].classList.add("destaqueon");
+}
+
+function prev_sliderdestaqueon(){
+    removercldestaqueoff()
+    if (valordestaque === 0){
+        valordestaque = slider_destaque.length -1
+    }else{
+        valordestaque --;
+    }
+    addcldestaqueon()
+}
+
+
+function netx_sliderdestaqueon(){
+    removercldestaqueoff()
+    if(valordestaque === 0){
+        valordestaque = slider_destaque.length -1
+    }else{
+        valordestaque --;
+    }
+    addcldestaqueon()
+}
+
+prev_btn_destaque.addEventListener("click", prev_sliderdestaqueon)
+netx_btn_destaque.addEventListener("click", netx_sliderdestaqueon)

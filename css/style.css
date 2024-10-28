@@ -153,7 +153,7 @@ body {
     padding: 20px;
 }
 
-.conteiner-abaixo-menu .conteudo-header .esquero-conteudo {
+.conteiner-abaixo-menu .conteudo-header .esquerdo-conteudo {
     width: 40%;
     height: 100%;
     display: flex;
@@ -162,7 +162,7 @@ body {
     justify-content: center;
 }
 
-.conteiner-abaixo-menu .conteudo-header .esquero-conteudo h1 {
+.conteiner-abaixo-menu .conteudo-header .esquerdo-conteudo h1 {
     font-size: 2.4rem;
     font-family: "Work Sans", sans-serif;
     font-weight: 900;
@@ -171,12 +171,12 @@ body {
     color: var(--color-terciara);
 }
 
-.conteiner-abaixo-menu .conteudo-header .esquero-conteudo h1 span {
+.conteiner-abaixo-menu .conteudo-header .esquerdo-conteudo h1 span {
     color: var(--color-secundaria);
     font-size: 2.7rem;
 }
 
-.conteiner-abaixo-menu .conteudo-header .esquero-conteudo p {
+.conteiner-abaixo-menu .conteudo-header .esquerdo-conteudo p {
     text-align: center;
     font-family: var(--font-roboto);
     font-size: 1.3rem;
@@ -186,7 +186,7 @@ body {
 }
 
 
-.conteiner-abaixo-menu .conteudo-header .esquero-conteudo button {
+.conteiner-abaixo-menu .conteudo-header .esquerdo-conteudo button {
     width: 190px;
     height: 40px;
     margin-top: 40px;
@@ -200,7 +200,7 @@ body {
     cursor: pointer;
 }
 
-.conteiner-abaixo-menu .conteudo-header .esquero-conteudo button:hover {
+.conteiner-abaixo-menu .conteudo-header .esquerdo-conteudo button:hover {
     background-color: var(--color-terciara);
     color: var(--colo-backgraund);
     scale: 1.1;
@@ -226,39 +226,48 @@ body {
 }
 
 .destaques .imgs button {
-    background-color: transparent;
-    box-shadow: 0px 0px 11px rgba(150, 148, 148, 0.377);
+    background-color:var(--color-secundaria);
+    box-shadow: 0px 0px 11px rgba(141, 139, 139, 0.377);
     border-radius: 10px;
     cursor: pointer;
-    padding: 10px;
     border: none;
-    width: 50px;
-    height: 40px;
+    width: 60px;
+    height: 50px;
 }
 
 .destaques .imgs button i {
+    padding: 10px;
     font-size: 1.4rem;
     font-weight: bolder;
     color: var(--color-terciara);
 }
-
+;.bi-arrow-bar-right{
+    padding: 10px;
+}
 .destaques .imgs .carrosdestaque {
     height: 90%;
     width: 100%;
-    overflow: hidden;
-    display: flex;
+    position: relative;
 }
 
 .destaques .imgs .carrosdestaque img {
     width: 100%;
-    overflow: hidden;
     rotate: -10deg;
+    position: absolute;
+    opacity: 0;
+    transition: .8s;
+}
+.destaques .imgs .carrosdestaque img.destaqueon{
+   opacity: 1;
+   rotate: -14deg;
+   animation: carro-destaque 1s 1 ease-in;
 }
 
-#jeep {
-    display: none;
+@keyframes carro-destaque {
+    0%{
+        transform: translateX(-150px);
+    }
 }
-
 .destaques .destaquesbtn {
     width: 190px;
     height: 40px;
@@ -354,7 +363,7 @@ main .container-carros .estoque-linha1 {
     display: grid;
     justify-content: space-between;
     grid-template-columns: 320px 320px 320px;
-    grid-template-rows: 100px;
+    grid-template-rows: 400px;
     gap: 10px;
 }
 
