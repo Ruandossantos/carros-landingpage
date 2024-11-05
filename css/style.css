@@ -226,7 +226,7 @@ body {
 }
 
 .destaques .imgs button {
-    background-color:var(--color-secundaria);
+    background-color: var(--color-secundaria);
     box-shadow: 0px 0px 11px rgba(141, 139, 139, 0.377);
     border-radius: 10px;
     cursor: pointer;
@@ -241,9 +241,13 @@ body {
     font-weight: bolder;
     color: var(--color-terciara);
 }
-;.bi-arrow-bar-right{
+
+;
+
+.bi-arrow-bar-right {
     padding: 10px;
 }
+
 .destaques .imgs .carrosdestaque {
     height: 90%;
     width: 100%;
@@ -257,17 +261,19 @@ body {
     opacity: 0;
     transition: .8s;
 }
-.destaques .imgs .carrosdestaque img.destaqueon{
-   opacity: 1;
-   rotate: -14deg;
-   animation: carro-destaque 1s 1 ease-in;
+
+.destaques .imgs .carrosdestaque img.destaqueon {
+    opacity: 1;
+    rotate: -14deg;
+    animation: carro-destaque 1s 1 ease-in;
 }
 
 @keyframes carro-destaque {
-    0%{
+    0% {
         transform: translateX(-150px);
     }
 }
+
 .destaques .destaquesbtn {
     width: 190px;
     height: 40px;
@@ -862,7 +868,6 @@ footer .conteudo-footer {
         display: flex;
         align-items: center;
         padding-left: 10px;
-        position: fixed;
         position: absolute;
         top: 90%;
         border-radius: 5px;
@@ -876,13 +881,21 @@ footer .conteudo-footer {
         align-items: center;
         padding-left: 10px;
         background-color: #25D366;
-        position: absolute;
-        top: 90%;
+        top: 84%;
         border-radius: 5px;
         z-index: 999999;
     }
 
-    .conteiner-abaixo-menu .conteudo-header .esquero-conteudo {
+    .conteiner-abaixo-menu {
+        width: 100%;
+        height: 90vh;
+    }
+    .conteiner-abaixo-menu .conteudo-header {
+        height: 100%;
+        width: 100%;
+        display: flex;
+    }
+    .conteiner-abaixo-menu .conteudo-header .esquerdo-conteudo {
         width: 100%;
         height: 100%;
         display: flex;
@@ -890,13 +903,17 @@ footer .conteudo-footer {
         align-items: center;
         justify-content: center;
     }
-
+    
+    .conteiner-abaixo-menu .aside-redes-header {
+        width: 0%;
+        position: relative;
+    }
     .conteiner-abaixo-menu .conteudo-header .esquero-conteudo h1 {
-        font-size: 3.4rem;
+        font-size:3rem;
     }
 
     .conteiner-abaixo-menu .conteudo-header .esquero-conteudo p {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .conteiner-abaixo-menu .conteudo-header .esquero-conteudo button {
@@ -906,12 +923,7 @@ footer .conteudo-footer {
     }
 
     .destaques {
-        width: 70%;
-        height: 100%;
         display: none;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
     }
 
 
@@ -956,7 +968,7 @@ footer .conteudo-footer {
 
     main .container-carros .estoque-linha1 .item1 .bi-arrow-bar-right {
         right: 0;
-        top: 45%;
+        top: 50%;
         padding: 9px;
     }
 
@@ -976,32 +988,55 @@ footer .conteudo-footer {
         width: 100%;
         height: 100%;
         margin: 0 auto;
-        background-color: firebrick;
+        position: relative;
     }
+
     .conte-left {
         width: 100%;
         height: 50%;
-        background-color: #25D366;
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding-left: 20px;
     }
+
     .conte-left p {
         font-size: 1.2rem;
     }
-    
+
     .conte-left i {
         font-size: 1.3rem;
     }
+
     .conte-reigth {
         width: 100%;
         height: 100%;
-        background-color: #515BD4;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
         justify-content: space-around;
     }
-    
+    .conte-reigth .endereco{
+        width: 100%;
+    }
+    .conte-reigth .endereco h1{
+        width: 100%;
+        text-align: center;
+        background-color: var(--color-secundaria);
+        color: var(--color-terciara);
+        padding: 10px;
+    }
+    .conte-reigth .endereco p{
+        font-size: 1.2rem;
+    }
+
+    .conte-reigth .localizacoa{
+        width: 100%;
+    }
+    .conte-reigth .localizacoa iframe{
+        width: 100%;
+    }
+    .criador-cont{
+        z-index: 99999;
+    }
 }
